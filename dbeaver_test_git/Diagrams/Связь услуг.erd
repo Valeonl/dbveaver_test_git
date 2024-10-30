@@ -6,13 +6,23 @@
 				<path name="public"/>
 				<path name="lsfusionbase"/>
 			</entity>
-			<entity id="2" name="_auto_ebudgetmaindatamodule_ebudgetmaindata" fq-name="public.&quot;_auto_ebudgetmaindatamodule_ebudgetmaindata&quot;" order="1" x="900" y="120">
+			<entity id="2" name="_auto_ebudgetmaindatamodule_ebudgetmaindata" fq-name="public.&quot;_auto_ebudgetmaindatamodule_ebudgetmaindata&quot;" order="1" x="1100" y="400">
+				<path name="public"/>
+				<path name="lsfusionbase"/>
+			</entity>
+			<entity id="3" name="_auto_ebudgetmaindatamodule_activityclass" fq-name="public.&quot;_auto_ebudgetmaindatamodule_activityclass&quot;" order="2" x="1080" y="40">
+				<path name="public"/>
+				<path name="lsfusionbase"/>
+			</entity>
+			<entity id="4" name="_auto_ebudgetmaindatamodule_activityclassimpl" fq-name="public.&quot;_auto_ebudgetmaindatamodule_activityclassimpl&quot;" order="3" x="1080" y="260">
 				<path name="public"/>
 				<path name="lsfusionbase"/>
 			</entity>
 		</data-source>
 	</entities>
 	<relations>
-		<relation name="vfk__auto_ebudgetmaindatamodule_ebudgetmaindata__auto_newservicesdirectory_bumpservice_33823589" type="vfk" pk-ref="1" fk-ref="2"/>
+		<relation name="vfk__auto_ebudgetmaindatamodule_ebudgetmaindata_?" type="vfk" pk-ref="1" fk-ref="2"/>
+		<relation name="vfk__auto_ebudgetmaindatamodule_activityclassimpl__auto_ebudgetmaindatamodule_ebudgetmaindata_33823629" type="vfk" pk-ref="2" fk-ref="4"/>
+		<relation name="vfk__auto_ebudgetmaindatamodule_activityclass__auto_ebudgetmaindatamodule_activityclassimpl_33823679" type="vfk" pk-ref="4" fk-ref="3"/>
 	</relations>
 </diagram>
