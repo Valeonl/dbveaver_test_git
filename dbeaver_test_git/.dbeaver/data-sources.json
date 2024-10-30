@@ -1,0 +1,43 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-192dd06d126-3f4cb8991e2ee53b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "lsfusionbase",
+			"save-password": true,
+			"configuration": {
+				"host": "158.160.72.94",
+				"port": "5432",
+				"database": "lsfusionbase",
+				"url": "jdbc:postgresql://158.160.72.94:5432/lsfusionbase",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-16",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"postgres-jdbc-192dd06d126-3f4cb8991e2ee53b":{"lsfusionbase":{"public":{":_auto_ebudgetmaindatamodule_ebudgetmaindata":{"foreign-keys":[{"entity":"node://dbeaver_test_git/datasources/postgres-jdbc-192dd06d126-3f4cb8991e2ee53b/database/lsfusionbase_16384/schema/public_2200/table/_auto_newservicesdirectory_bumpservice_33823589","constraint":"_auto_newservicesdirectory_bumpservice_VK","attributes":{"key0":"newservicesdirectory_maindataowner_bumpservice"}}]},":_auto_newservicesdirectory_bumpservice":{"constraints":{"_auto_newservicesdirectory_bumpservice_VK":{"type":"vpk","attributes":["newservicesdirectory_maindataowner_bumpservice"]}}}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Разработка",
+			"color": "255,255,255",
+			"description": "База данных для разработки",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}

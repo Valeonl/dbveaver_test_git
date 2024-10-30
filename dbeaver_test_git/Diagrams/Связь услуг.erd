@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Связь услуг.erd">
+	<entities>
+		<data-source id="postgres-jdbc-192dd06d126-3f4cb8991e2ee53b">
+			<entity id="1" name="_auto_newservicesdirectory_bumpservice" fq-name="public.&quot;_auto_newservicesdirectory_bumpservice&quot;" order="0" x="300" y="120">
+				<path name="public"/>
+				<path name="lsfusionbase"/>
+			</entity>
+			<entity id="2" name="_auto_ebudgetmaindatamodule_ebudgetmaindata" fq-name="public.&quot;_auto_ebudgetmaindatamodule_ebudgetmaindata&quot;" order="1" x="900" y="120">
+				<path name="public"/>
+				<path name="lsfusionbase"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk__auto_ebudgetmaindatamodule_ebudgetmaindata__auto_newservicesdirectory_bumpservice_33823589" type="vfk" pk-ref="1" fk-ref="2"/>
+	</relations>
+</diagram>
