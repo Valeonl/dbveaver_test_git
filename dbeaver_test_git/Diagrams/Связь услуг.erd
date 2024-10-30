@@ -2,7 +2,7 @@
 <diagram version="1" name="Связь услуг.erd">
 	<entities>
 		<data-source id="postgres-jdbc-192dd06d126-3f4cb8991e2ee53b">
-			<entity id="1" name="_auto_newservicesdirectory_bumpservice" fq-name="public.&quot;_auto_newservicesdirectory_bumpservice&quot;" order="0" x="1000" y="0">
+			<entity id="1" name="_auto_newservicesdirectory_bumpservice" fq-name="public.&quot;_auto_newservicesdirectory_bumpservice&quot;" order="0" x="500" y="40">
 				<path name="public"/>
 				<path name="lsfusionbase"/>
 			</entity>
@@ -21,7 +21,7 @@
 		</data-source>
 	</entities>
 	<relations>
-		<relation name="vfk__auto_ebudgetmaindatamodule_ebudgetmaindata_?" type="vfk" pk-ref="1" fk-ref="2"/>
+		<relation name="vfk__auto_ebudgetmaindatamodule_ebudgetmaindata__auto_newservicesdirectory_bumpservice_33823589" type="vfk" pk-ref="1" fk-ref="2"/>
 		<relation name="vfk__auto_ebudgetmaindatamodule_activityclassimpl__auto_ebudgetmaindatamodule_ebudgetmaindata_33823629" type="vfk" pk-ref="2" fk-ref="4"/>
 		<relation name="vfk__auto_ebudgetmaindatamodule_activityclass__auto_ebudgetmaindatamodule_activityclassimpl_33823679" type="vfk" pk-ref="4" fk-ref="3"/>
 	</relations>
